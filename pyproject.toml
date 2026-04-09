@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ostrich-neck"
+version = "0.1.0"
+description = "Local hardware interface for the 2-DOF Ostrich neck"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "Safe Robotics Lab" }]
+dependencies = [
+    "dynamixel-sdk>=3.8.0",
+    "pynput",
+    "pyserial",
+]
+
+[project.urls]
+Homepage = "https://github.com/kczttm/ostrich-neck"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["ostrich_neck"]
+include-package-data = true
