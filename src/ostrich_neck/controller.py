@@ -18,8 +18,8 @@ from dynamixel_sdk import (
 
 @dataclass(frozen=True)
 class MotorIds:
-    yaw: int = 14
-    pitch: int = 15
+    yaw: int = 11
+    pitch: int = 12
 
 
 class DynamixelConnectionError(RuntimeError):
